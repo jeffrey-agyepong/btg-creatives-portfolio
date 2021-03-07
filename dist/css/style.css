@@ -1,0 +1,141 @@
+@font-face {
+  font-family: 'Fjalla One';
+  src: url(FjallaOne-Regular.ttf);
+}
+@font-face {
+  font-family: 'Aldivaro Stamp Demo';
+  src: url(AldivaroStampDemo.otf);
+}
+@font-face {
+  font-family: 'Monitoric Regular';
+  src: url(monitorica.regular.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: visible;
+  font-family: 'Monitoric Regular';
+  background-color: black;
+}
+
+nav.nav-center ul {
+  text-align: center;
+}
+nav.nav-center ul li {
+  display: inline;
+  float: none;
+}
+
+nav.nav-center ul li a {
+  display: inline-block;
+}
+
+#index-banner {
+  background: rgb(13, 13, 87);
+  background-size: cover;
+  background-position: top center;
+  height: 100vh;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+#header {
+  box-shadow: rgb(81, 87, 90) 0px -1px 0px 0px inset;
+  text-shadow: rgba(0, 0, 0, 0.75) -1px -1px 1px;
+  font-family: 'Aldivaro Stamp Demo';
+  font-size: 15px;
+  border-bottom: 1px solid rgb(245, 245, 245);
+}
+.banner {
+  border-bottom: solid 2px rgb(228, 221, 221);
+  padding-bottom: 0.2em;
+}
+.page-section {
+  padding: 1.25rem;
+}
+
+nav ul a {
+  color: rgb(255, 255, 255);
+}
+
+.right i {
+  color: rgb(255, 255, 255);
+}
+.sidenav i {
+  color: rgb(0, 0, 0);
+}
+nav .sidenav-trigger {
+  margin-top: 20px;
+}
+.mg {
+  margin: auto;
+}
+.mb {
+  margin-bottom: 1.25rem;
+}
+.header_toggle > span:not(:last-child) {
+  margin-bottom: 5px;
+}
+.header_toggle > span {
+  display: block;
+  width: 26px;
+  height: 2px;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+  transform-origin: 3px 1px;
+}
+.wrapper {
+  background-color: rgb(16, 41, 59);
+}
+.inner {
+  margin: 10px;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: #149286;
+}
+.wrapper .spotlight .inner {
+  display: flex;
+  flex-direction: row;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto;
+  margin: auto;
+  grid-gap: 10px;
+}
+
+.ftr {
+  margin: auto;
+  border-radius: 10px;
+  width: 100%;
+  object-fit: cover;
+  padding: 0.6rem;
+}
+
+.title {
+  background: rgba(31, 22, 22, 0.952);
+  border-radius: 10px;
+  width: auto;
+  margin: 2px;
+}
+/* Mobile Devices */
+@media (min-width: 35.5rem) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+    margin-left: 1px;
+    margin-right: 1px;
+  }
+}
