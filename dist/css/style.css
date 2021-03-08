@@ -125,6 +125,9 @@ nav .sidenav-trigger {
   padding: 0.6rem;
 }
 
+.bg-dark {
+  background: #020e648c;
+}
 .title {
   background: rgba(31, 22, 22, 0.952);
   border-radius: 10px;
