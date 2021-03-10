@@ -18,6 +18,7 @@ $('.hover').mouseout(function(){
   $('.image_holder').css('opacity','1');
 });
 */
+//Carousel
 function showhide()
 {
   var div = document.getElementById("post");
@@ -30,7 +31,19 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Or with jQuery
 
+// Material Box
 $(document).ready(function(){
   $('.carousel').carousel();
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+  var elems = document.querySelectorAll('.materialboxed');
+  var instances = M.Materialbox.init(elems, options);
+});
+
+// Or with jQuery
+
+$(document).ready(function(){
+  $('.materialboxed').materialbox();
+});
+    
