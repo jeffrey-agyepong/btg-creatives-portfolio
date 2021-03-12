@@ -103,7 +103,7 @@ nav .sidenav-trigger {
   margin: 10px;
   border-radius: 10px;
   padding: 5px;
-  background-color: #149286;
+  background-color: #000000de;
 }
 .wrapper .spotlight .inner {
   display: flex;
@@ -117,6 +117,22 @@ nav .sidenav-trigger {
   grid-gap: 10px;
 }
 
+.footer_links {
+  display: grid;
+  grid-template-columns: auto;
+  padding-top: 30px;
+}
+footer .footer-cols {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 2rem;
+  text-align: center;
+  margin-top: 50px;
+}
+#contact {
+  margin: 50px;
+}
 .ftr {
   margin: auto;
   border-radius: 10px;
@@ -127,6 +143,9 @@ nav .sidenav-trigger {
 
 .bg-dark {
   background: #020e648c;
+}
+.bg-dark-1 {
+  background: #383838 !important;
 }
 .title {
   background: rgba(31, 22, 22, 0.952);
@@ -192,5 +211,10 @@ textarea {
     grid-template-columns: 1fr 1fr 1fr;
     margin-left: 1px;
     margin-right: 1px;
+  }
+  .footer_links {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 30px;
   }
 }
