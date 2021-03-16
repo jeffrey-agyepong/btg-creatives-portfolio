@@ -31,6 +31,9 @@ body {
   background-color: black;
 }
 
+.font{
+  font-size: 20px;
+}
 nav.nav-center ul {
   text-align: center;
 }
@@ -99,11 +102,17 @@ nav .sidenav-trigger {
 .wrapper {
   background-color: rgb(16, 41, 59);
 }
-.inner {
+/*.inner {
   margin: 10px;
   border-radius: 10px;
   padding: 5px;
   background-color: #000000de;
+}*/
+.inner {
+  width: 100%;
+   max-width: 68em; 
+  margin: 0 auto;
+  padding: 0 2.5em;
 }
 .wrapper .spotlight .inner {
   display: flex;
@@ -129,6 +138,11 @@ footer .footer-cols {
   padding: 2rem;
   text-align: center;
   margin-top: 50px;
+}
+#footer .inner{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 #contact {
   margin: 50px;
@@ -184,6 +198,9 @@ textarea {
   height: 150px;
   line-height: 150%;
   resize: vertical;
+}
+form > .fields > .field.half {
+  width: calc(50% - 0.75em);
 }
 
 [type='submit'] {
