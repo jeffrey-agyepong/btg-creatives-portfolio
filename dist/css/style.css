@@ -102,18 +102,18 @@ nav .sidenav-trigger {
 .wrapper {
   background-color: rgb(16, 41, 59);
 }
-/*.inner {
+.inner {
   margin: 10px;
   border-radius: 10px;
   padding: 5px;
   background-color: #000000de;
-}*/
-.inner {
+}
+/*.inner {
   width: 100%;
    max-width: 68em; 
   margin: 0 auto;
   padding: 0 2.5em;
-}
+}*/
 .wrapper .spotlight .inner {
   display: flex;
   flex-direction: row;
