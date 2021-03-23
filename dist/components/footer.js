@@ -10,8 +10,8 @@ this.innerHTML =`
 <div class="container">
   <div class="row">
     <div class="col l6 s12">
-      <h5 class="white-text">Consider Supporting Us</h5>
-      <p class="grey-text text-lighten-4"> <a href="https://www.buymeacoffee.com/beyondthegrave" target="_blank"><img
+      <h5 class="white-text center">Consider Supporting Us</h5>
+      <p class="grey-text text-lighten-4 center"> <a href="https://www.buymeacoffee.com/beyondthegrave" target="_blank"><img
       src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee"
       style="height: 60px !important;width: 217px !important;"></a></p>
     </div>
