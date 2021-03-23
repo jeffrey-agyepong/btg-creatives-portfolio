@@ -10,6 +10,10 @@
   font-family: 'Monitoric Regular';
   src: url(monitorica.regular.otf);
 }
+@font-face {
+  font-family: 'Metal Mania';
+  src: url(MetalMania-Regular.ttf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -27,25 +31,31 @@ body {
   margin: 0px;
   padding: 0px;
   overflow-x: visible;
-  font-family: 'Monitoric Regular';
-  background-color: black;
+  font-family: 'Metal Mania';
+  background-color: #383838;
+}
+p {
+  font-size: 1.25rem;
+}
+.font {
+  font-family: 'Fjalla One';
+}
+/*Category Filter*/
+.filter {
+  padding: 6px 6px !important;
+  border-radius: 6px;
+  transition: all 0.95s;
+  font-size: 30px;
+  cursor: pointer;
+}
+.filter.active {
+  box-shadow: 0px 1px 20px 20px #2926cc26;
+  color: white;
 }
 
-.font{
-  font-size: 20px;
+.filter:hover {
+  background: rgba(211, 211, 211, 0.521);
 }
-nav.nav-center ul {
-  text-align: center;
-}
-nav.nav-center ul li {
-  display: inline;
-  float: none;
-}
-
-nav.nav-center ul li a {
-  display: inline-block;
-}
-
 #index-banner {
   background: rgb(13, 13, 87);
   background-size: cover;
@@ -55,11 +65,8 @@ nav.nav-center ul li a {
   width: 100%;
 }
 #header {
-  box-shadow: rgb(81, 87, 90) 0px -1px 0px 0px inset;
-  text-shadow: rgba(0, 0, 0, 0.75) -1px -1px 1px;
-  font-family: 'Aldivaro Stamp Demo';
-  font-size: 15px;
-  border-bottom: 1px solid rgb(245, 245, 245);
+  background: #383838;
+  font-family: 'Metal Mania', 'Fjalla';
 }
 .banner {
   border-bottom: solid 2px rgb(228, 221, 221);
@@ -82,8 +89,15 @@ nav ul a {
 nav .sidenav-trigger {
   margin-top: 20px;
 }
+.flex {
+  display: flex;
+}
+.flex span {
+  padding: 15px;
+  margin: 0 auto;
+}
 .mg {
-  margin: auto;
+  margin: 0 auto;
 }
 .mb {
   margin-bottom: 1.25rem;
@@ -105,18 +119,8 @@ nav .sidenav-trigger {
 .inner {
   margin: 10px;
   border-radius: 10px;
-  padding: 5px;
-  background-color: #000000de;
-}
-/*.inner {
-  width: 100%;
-   max-width: 68em; 
-  margin: 0 auto;
-  padding: 0 2.5em;
-}*/
-.wrapper .spotlight .inner {
-  display: flex;
-  flex-direction: row;
+  padding: 15px;
+  background-color: #17151ade;
 }
 
 .grid-container {
@@ -139,11 +143,7 @@ footer .footer-cols {
   text-align: center;
   margin-top: 50px;
 }
-#footer .inner{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
+
 #contact {
   margin: 50px;
 }
@@ -229,6 +229,10 @@ form > .fields > .field.half {
     margin-left: 1px;
     margin-right: 1px;
   }
+  nav {
+    font-size: 25px;
+  }
+
   .footer_links {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

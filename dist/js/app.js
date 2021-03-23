@@ -1,0 +1,31 @@
+new Vue({
+  el: '#vue-app',
+  data: {
+        currentFilter: 'ALL',
+        category: '',
+        projectList: [
+         {
+              title: 'For The Rock', 
+              link: 'fortherock.html', 
+              img: 'dist/img/ftr.webp',
+              category: 'Graphic Designers'
+         },
+            {
+              title:'Concise Web Designs', 
+              link:'./afterimage.html', 
+              img: 'dist/img/cwd.png',
+               category: 'Web Developers & Designers'
+          },
+           
+  
+           
+        ], 
+    },
+  
+  methods: {
+    setFilter: function (filter) {
+      this.currentFilter = filter;
+        } 
+    },
+    
+  });

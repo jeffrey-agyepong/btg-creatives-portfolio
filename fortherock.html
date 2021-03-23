@@ -18,7 +18,8 @@
   <meta property="og:image" content="">
   <meta name="facebook-domain-verification" content="hgx2d77kz794w8fg8q2h8pcu8k0zrc" />
 
-
+  <script src="dist/components/header.js"></script>
+  <script src="dist/components/footer.js"></script>
   <link rel="stylesheet" href="dist/css/materialize.min.css">
   <link rel="stylesheet" href="dist/css/style.css">
   <link rel="stylesheet" href="dist/css/all.min.css">
@@ -30,66 +31,37 @@
 </head>
 
 <body>
-  <div class="navbar-fixed">
-    <nav class="bg-dark-1  darken-3 nav-center" role="navigation" id="header">
-      <div class="nav-wrapper container">
-        <a id="logo-container" href="index.html" class="brand-logo "></a>
-        <ul class="center hide-on-med-and-down">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <ul id="nav-mobile" class="sidenav black center">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <div class=" center" id="">
-            <a href=""><i class="fab fa-facebook fa-2x white-text" target="_blank"></i></a>
+  <header-component></header-component>
 
-            <a href="" target=_blank id="profile-link"><i class="fab fa-instagram fa-2x white-text"></i></a>
 
-            <a href="" target="_blank"><i class="fab fa-youtube fa-2x white-text"></i></a>
-
-          </div>
-        </ul>
-        <a href="#" data-target="nav-mobile" class="sidenav-trigger header_toggle">
-          <span></span>
-          <span></span>
-          <span></span>
-        </a>
-      </div>
-    </nav>
-  </div>
   <!--Hero image-->
-  <div class="black darken-1 music-pg-ht">
-    <div class="section">
-      <div class="container">
+
+  <div class="section">
+    <div class="container">
+
+      <h2 class="white-text center-align font">For The Rock is a music based ministry that promotes artists who point
+        the
+        world to
+        Christ. </h2>
+    </div>
+  </div>
 
 
-        <h1 class="header center-align white-text">
-          FOR THE ROCK</h1>
-        <p class="white-text center-align font">For The Rock is a music based ministry that promotes artists who point
-          the
-          world to
-          Christ. Along with basic
+
+
+  <!-- Along with basic
           promotion shout outs via our Instagram Feed or Youtube Channel, FTR offers affordable artwork for Album, EP or
           Single covers.<br>
           Christopher Adam, the man behind For The Rock, aims to offer bands and musical artists high
-          quality artwork to better further their reach for the Kingdom.</p>
-      </div>
-    </div>
-
-
-  </div>
-
+          quality artwork to better further their reach for the Kingdom. -->
 
 
   <section class="section wrapper spotlight hide-on-large-only">
 
     <div class="container">
       <div class="grid-container">
-        <img src="dist/img/ftr/2015 12 24 God's Love For Hardcore - Winter Compilation  Vol. 2.webp" alt=""
-          class="responsive-img hoverable materialboxed">
+        <img src="dist/img/ftr/2015 12 24 God's Love For Hardcore - Winter Compilation  Vol. 2.webp"
+          alt="God's Love For Hardcore" class="responsive-img hoverable materialboxed">
         <img src="dist/img/ftr/2020 02 26 Grace Notes - Ephemera.webp" alt=""
           class="responsive-img hoverable materialboxed">
         <img src="dist/img/ftr/2018 03 09 Beyond Vision - Moving Forward.webp" alt=""
@@ -180,75 +152,48 @@
 
 
 
-  <!--<section class="center " id="contact">
-    <h2 class="center bg-dark-1 white-text">Connect</h2>
-    <div class="footer-col s12 m4 footer_links">
-
-      <div>
-        <a href=""><i class="fab fa-instagram fa-4x"></i></a>
-      </div>
-      <div>
-        <a href="" target=_blank id="profile-link"><i class="fas fa-envelope-open fa-4x"></i></a>
-      </div>
-      <div>
-        <a href=""><i class="fab fa-youtube fa-4x"></i></a>
-      </div>
-
-
-    </div>
-
-    </secion> -->
-
   <!--Footer-->
 
-  <footer id="footer">
+  <div class="container">
+
+    <div class="inner mg">
+      <section>
+        <h2 class="white-text center">Get in touch</h2>
+        <!--Form-->
+        <p class="center white-text font"><i class="fas fa-envelope white-text"></i> Fortherock@gmail.com</p>
+
+        <form method="POST" name="contact" data-netlify="true">
+          <input name="name" type="text" class="feedback-input" placeholder="Name" required />
+          <input name="email" type="text" class="feedback-input" placeholder="Email" required />
+          <input name="subject" type="text" class="feedback-input" placeholder="Subject" />
+          <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+          <div class="field">
+            <div data-netlify-recaptcha="true"></div>
+          </div>
+          <input type="submit" value="SUBMIT" />
+        </form>
+    </div>
+
+    </section>
+
+
+
+
     <div class="inner">
       <section>
-        <h2 class="white-text">Get in touch</h2>
-        <form action="#" method="post">
-          <div class="fields">
-            <div class="fields half">
-              <input type="text" name="name" id="name" placeholder="Name">
-            </div>
-            <div class="fields half">
-              <input type="email" name="email" id="email" placeholder="Email">
-            </div>
-            <div class="field">
-              <textarea name="message" id="message" placeholder="Message"></textarea>
-            </div>
-          </div>
+        <h2 class="white-text center-align">Follow</h2>
+        <div class="flex icons center-align">
 
+          <span><a href="#" class="icon brands fab fa-facebook fa-3x"><span class="label"></span></a></span>
+          <span><a href="#" class="icon brands fab fa-instagram fa-3x"><span class="label"></span></a></span>
+          <span><a href="#" class="icon brands fab fa-youtube fa-3x"><span class="label"></span></a></span>
 
-
-        </form>
-      </section>
-      <section>
-        <h2>Follow</h2>
-        <ul class="icons">
-          <li><a href="#" class="icon brands style2 fab fa-twitter"><span class="label">Twitter</span></a></li>
-          <li><a href="#" class="icon brands style2 fab fa-facebook "><span class="label">Facebook</span></a></li>
-          <li><a href="#" class="icon brands style2 fab fa-instagram"><span class="label">Instagram</span></a></li>
-          <li><a href="#" class="icon brands style2 fa-500px"><span class="label">500px</span></a></li>
-          <li><a href="#" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
-          <li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
-        </ul>
+        </div>
       </section>
     </div>
-  </footer>
-
-  <div class="container footer_links">
-
-
-    <p class="white-text center-align">Developed by: <a href="" target="_blank" class="copyright">Concise Web
-        Designs</a></p>
-    <p class="copyright center-align white-text">&copy; 2021 Beyond The Grave</p>
-    <a href="https://beyondthegravemusic.com/privacy-policy.html" target="_blank" rel="noopener noreferrer"
-      class="center-align">Privacy
-      Policy</a></p>
-
   </div>
 
-
+  <footer-component></footer-component>
 
   <script src="dist/js/jquery.min.js"></script>
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
