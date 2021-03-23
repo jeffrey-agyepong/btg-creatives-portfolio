@@ -35,10 +35,13 @@ body {
   background-color: #383838;
 }
 .brand-logo {
-  font-size: 18px !important;
+  font-size: 1.125rem !important;
 }
 p {
   font-size: 1.25rem;
+}
+h2 {
+  font-size: 1.125rem !important;
 }
 .font {
   font-family: 'Fjalla One';
@@ -219,12 +222,17 @@ form > .fields > .field.half {
 
 /* Mobile Devices */
 @media (min-width: 35.5rem) {
+  h2 {
+    font-size: 3rem !important;
+  }
   .grid-container {
     grid-template-columns: 1fr 1fr 1fr;
     margin-left: 1px;
     margin-right: 1px;
   }
-
+  .brand-logo {
+    font-size: 28px !important;
+  }
   .footer_links {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
