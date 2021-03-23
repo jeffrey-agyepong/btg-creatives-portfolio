@@ -19,11 +19,11 @@ this.innerHTML =`
     <h5 class="white-text center-align">Connect With Us</h5>
     <div class="flex icons center-align">
 
-      <span><a href="https://web.facebook.com/fortherockministries" class="icon brands fab fa-facebook fa-3x"><span
+      <span><a href="https://web.facebook.com/Beyondthegrave777" class="icon brands fab fa-facebook fa-3x"><span
             class="label"></span></a></span>
-      <span><a href="https://www.instagram.com/for.the.rock/" class="icon brands fab fa-instagram fa-3x"><span
+      <span><a href="https://www.instagram.com/beyond.the.grave_/" class="icon brands fab fa-instagram fa-3x"><span
             class="label"></span></a></span>
-      <span><a href="https://www.youtube.com/fortherock
+      <span><a href="https://www.youtube.com/channel/UCCXafO-fbIZnTHNoRlx2QWg
         " class="icon brands fab fa-youtube fa-3x"><span class="label"></span></a></span>
 
     </div>
