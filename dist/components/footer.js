@@ -10,17 +10,23 @@ this.innerHTML =`
 <div class="container">
   <div class="row">
     <div class="col l6 s12">
-      <h5 class="white-text">Footer Content</h5>
-      <p class="grey-text text-lighten-4"></p>
+      <h5 class="white-text">Consider Supporting Us</h5>
+      <p class="grey-text text-lighten-4"> <a href="https://www.buymeacoffee.com/beyondthegrave" target="_blank"><img
+      src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee"
+      style="height: 60px !important;width: 217px !important;"></a></p>
     </div>
     <div class="col l4 offset-l2 s12">
-      <h5 class="white-text">Links</h5>
-      <ul>
-        <li><a class="grey-text text-lighten-3" href="#!">Facebook</a></li>
-        <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-        <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-        <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-      </ul>
+    <h5 class="white-text center-align">Connect With Us</h5>
+    <div class="flex icons center-align">
+
+      <span><a href="https://web.facebook.com/fortherockministries" class="icon brands fab fa-facebook fa-3x"><span
+            class="label"></span></a></span>
+      <span><a href="https://www.instagram.com/for.the.rock/" class="icon brands fab fa-instagram fa-3x"><span
+            class="label"></span></a></span>
+      <span><a href="https://www.youtube.com/fortherock
+        " class="icon brands fab fa-youtube fa-3x"><span class="label"></span></a></span>
+
+    </div>
     </div>
   </div>
 </div>
