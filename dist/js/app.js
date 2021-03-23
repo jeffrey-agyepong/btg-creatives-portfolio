@@ -12,7 +12,7 @@ new Vue({
          },
             {
               title:'Concise Web Designs', 
-              link:'./afterimage.html', 
+              link:'https://cwd.beyondthegravemusic.com/', 
               img: 'dist/img/cwd.png',
                category: 'Web Developers & Designers'
           },
