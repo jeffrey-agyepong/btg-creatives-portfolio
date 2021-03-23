@@ -135,10 +135,12 @@ nav .sidenav-trigger {
   margin: auto;
   grid-gap: 10px;
 }
-
-footer {
-  bottom: 0;
+.footer_links {
+  display: grid;
+  grid-template-columns: auto;
+  margin: auto;
   width: 100%;
+  bottom: 0;
   height: 60px;
 }
 
@@ -220,7 +222,7 @@ form > .fields > .field.half {
   background: #020e64;
 }
 
-/* Mobile Devices */
+/* Desktop Devices */
 @media (min-width: 35.5rem) {
   h2 {
     font-size: 3rem !important;
@@ -236,6 +238,5 @@ form > .fields > .field.half {
   .footer_links {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding-top: 30px;
   }
 }

@@ -6,7 +6,10 @@ class Footer extends HTMLElement {
 
 connectedCallback(){
 this.innerHTML =`
-<footer class="container footer footer_links bg-dark">
+<div class="bg-dark">
+
+<div class="container footer_links ">
+
 <p class="white-text center-align">Developed by: <a href="" target="_blank" class="copyright">Concise Web
     Designs</a></p>
 <p class="copyright center-align white-text">&copy; 2021 Beyond The Grave</p>
@@ -14,7 +17,10 @@ this.innerHTML =`
   class="center-align">Privacy
   Policy</a></p>
 
-</footer>
+</div>
+
+
+</div>
 `;
 
 }
