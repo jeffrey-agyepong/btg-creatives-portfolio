@@ -34,47 +34,48 @@
 <body>
   <header-component></header-component>
 
+  <main>
 
-  <!--Hero image-->
-  <div id="vue-app">
-    <h1 class="center">Creatives</h1>
+    <!--Hero image-->
+    <div id="vue-app">
+      <h1 class="center">Creatives</h1>
 
-    <div class="filters center-align">
-      <span class="filter" v-bind:class="{ active: currentFilter === 'ALL'}" v-on:click="setFilter('ALL')">All
-      </span>
-      <span class="filter" v-bind:class="{ active: currentFilter === 'Graphic Designers'}"
-        v-on:click="setFilter('Graphic Designers')">
-        Graphic Designers</span>
-      <span class="filter" v-bind:class="{ active: currentFilter === 'Web Developers & Designers'}"
-        v-on:click="setFilter('Web Developers & Designers')">Web Developers & Designers</span>
+      <div class="filters center-align">
+        <span class="filter" v-bind:class="{ active: currentFilter === 'ALL'}" v-on:click="setFilter('ALL')">All
+        </span>
+        <span class="filter" v-bind:class="{ active: currentFilter === 'Graphic Designers'}"
+          v-on:click="setFilter('Graphic Designers')">
+          Graphic Designers</span>
+        <span class="filter" v-bind:class="{ active: currentFilter === 'Web Developers & Designers'}"
+          v-on:click="setFilter('Web Developers & Designers')">Web Developers & Designers</span>
+
+      </div>
+
+
+      <section class="section">
+        <div class="container">
+
+          <transition-group name="projectsList" class="grid-container" tag="div">
+            <div class="rounded project " v-if="currentFilter === project.category || currentFilter === 'ALL'"
+              v-bind:key="project.title" v-for="project in projectList">
+              <div class="inner">
+                <a :href="project.link">
+                  <div class="flex">
+                    <img class="size responsive-img hoverable" v-bind:src="project.img">
+                  </div>
+                  <figcaption class="project-title center-align">{{project.title}}</figcaption>
+                </a>
+              </div>
+            </div>
+          </transition-group>
+
+        </div>
+      </section>
+
 
     </div>
 
-
-    <section class="section">
-      <div class="container">
-
-        <transition-group name="projectsList" class="grid-container" tag="div">
-          <div class="rounded project " v-if="currentFilter === project.category || currentFilter === 'ALL'"
-            v-bind:key="project.title" v-for="project in projectList">
-            <div class="inner">
-              <a :href="project.link">
-                <div class="flex">
-                  <img class="size responsive-img hoverable" v-bind:src="project.img">
-                </div>
-                <figcaption class="project-title center-align">{{project.title}}</figcaption>
-              </a>
-            </div>
-          </div>
-        </transition-group>
-
-      </div>
-    </section>
-
-
-  </div>
-
-
+  </main>
 
   <footer-component></footer-component>
   <script src="dist/js/app.js"></script>
