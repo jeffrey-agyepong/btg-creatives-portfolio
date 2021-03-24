@@ -43,9 +43,7 @@ main {
 .brand-logo {
   font-size: 1.125rem !important;
 }
-p {
-  font-size: 1.5rem;
-}
+
 h2 {
   font-size: 1.8rem !important;
 }
@@ -54,6 +52,7 @@ li {
 }
 .font {
   font-family: 'Monitoric Regular';
+  font-size: 1.5rem;
 }
 /*Category Filter*/
 .filter {
@@ -62,7 +61,6 @@ li {
   transition: all 0.95s;
   font-size: 30px;
   cursor: pointer;
-  border-style: solid;
 }
 .filter.active {
   box-shadow: 0px 1px 20px 20px #2926cc26;
@@ -150,11 +148,9 @@ nav .sidenav-trigger {
 .footer_links {
   display: grid;
   grid-template-columns: auto;
-  position: absolute;
   margin: auto;
   width: 100%;
   bottom: 0;
-  padding: 20px;
 }
 
 #contact {
@@ -249,7 +245,6 @@ form > .fields > .field.half {
     font-size: 28px !important;
   }
   .footer_links {
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
