@@ -14,7 +14,7 @@ new Vue({
               title:'Concise Web Designs', 
               link:'https://cwd.beyondthegravemusic.com/', 
               img: 'dist/img/cwd.png',
-               category: 'Web Developers & Designers'
+               category: 'Web Designers'
           },
            
   
