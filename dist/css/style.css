@@ -37,11 +37,17 @@ body {
   font-family: 'Metal Mania';
   background-color: #383838;
 }
+nav {
+  background: #383838;
+  font-family: 'Metal Mania', 'Fjalla';
+  font-size: 1.55rem;
+}
+
 main {
   flex: 1 0 auto;
 }
 .brand-logo {
-  font-size: 1.125rem !important;
+  font-size: 1.4rem !important;
 }
 
 h2 {
@@ -233,6 +239,9 @@ form > .fields > .field.half {
 
 /* Desktop Devices */
 @media (min-width: 35.5rem) {
+  nav {
+    font-size: ‭1.5625‬rem;
+  }
   h2 {
     font-size: 3rem !important;
   }
